@@ -1,6 +1,6 @@
-# Entando app-engine
+# villanova app-engine
 
-This multi-module Maven project contains all the Entando core modules needed to build the app-engine war file.
+This multi-module Maven project contains all the villanova core modules needed to build the app-engine war file.
 
 To run the war file locally:
 
@@ -10,7 +10,7 @@ cd webapp/
 mvn package jetty:run-war -Pjetty-local -Dspring.profiles.active=swagger -DskipTests -DskipLicenseDownload -Pderby -Pkeycloak
 ```
 
-The application will be available at http://localhost:8080/entando-de-app/
+The application will be available at http://localhost:8080/villanova-de-app/
 
 More information are available on [webapp README](webapp/README.md).
 
@@ -43,9 +43,9 @@ The general log level is controlled by the variable `ROOT_LOG_LEVEL`, that in te
 ||	CDS_PRIVATE_URL | http://YOUR-TENANT-ID-cds-service:8080 | |	
 ||	CDS_PATH |	/api/v1	||	
 | Keycloak/TLS | KEYCLOAK_AUTH_URL | https://YOUR-HOST-NAME/auth|
-||	SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_OIDC_ISSUER_URI| https://YOUR-HOST-NAME/auth/realms/entando ||
-|| 	ENTANDO_APP_USE_TLS	| | protocol for the redirect to keycloak login |
-||	ENTANDO_APP_ENGINE_EXTERNAL_PORT | | to force the port to use |			
+||	SPRING_SECURITY_OAUTH2_CLIENT_PROVIDER_OIDC_ISSUER_URI| https://YOUR-HOST-NAME/auth/realms/villanova ||
+|| 	villanova_APP_USE_TLS	| | protocol for the redirect to keycloak login |
+||	villanova_APP_ENGINE_EXTERNAL_PORT | | to force the port to use |			
 |Redis server | REDIS_ACTIVE | true, [false] | to activate Redis cache management |
 ||	REDIS_ADDRESS |URL [redis://localhost:6379]|	Redis host address||
 || REDIS_ADDRESSES | | for HA, insert the comma separated list of nodes |
@@ -56,14 +56,14 @@ The general log level is controlled by the variable `ROOT_LOG_LEVEL`, that in te
 || REDIS_IO_THREAD_POOL_SIZE | Integer, [8]	| to mitigate errors caused by missing front-end cache refresh		
 |Solr | SOLR_ACTIVE	| true, false | to activate Solr search
 || SOLR_ADDRESS	|[http://localhost:8983/solr] | Solr host address
-|| SOLR_CORE | string, [entando] | name of collection  
+|| SOLR_CORE | string, [villanova] | name of collection  
 || advancedSearch | true, false | To add the Solr config page to the CMS menu
 | Tomcat server | AGENT_ENABLED | true, [false] | if true, adds the agent options to tomcat 
 || AGENT_OPTS | javaagent:~/YOUR-JARFILE.jar, [empty] | the jar file with the agent options to use 
 || TOMCAT_MAX_POST_SIZE | Enter a value in bytes, [209,715,200 bytes] | to configure connector maxPostSize | 
 || FILE_UPLOAD_MAX_SIZE | Enter a value in bytes, [52,428,800 bytes] | to configure the application upload limit		
 | MISC  |  |  | |			
-|| ENTANDO_BUNDLE_CLI_ETC | ${ENTANDO_BUNDLE_CLI_ETC}/hub/credentials | Credentials/parameters saved within JSON files under this path for ent bundle add hub command			
-|| ENTANDO_APP_ENGINE_HEALTH_CHECK_TYPE | db.migration.strategy | [auto], skip, disabled, generate_sql | Liquibase strategy 			
+|| villanova_BUNDLE_CLI_ETC | ${villanova_BUNDLE_CLI_ETC}/hub/credentials | Credentials/parameters saved within JSON files under this path for ent bundle add hub command			
+|| villanova_APP_ENGINE_HEALTH_CHECK_TYPE | db.migration.strategy | [auto], skip, disabled, generate_sql | Liquibase strategy 			
 || LOG_CONFIG_FILE_PATH | | to use the logback composable feature | 			
-|| ENTANDO_DOCKER_REGISTRY_OVERRIDE |  | Deprecated-for v1 bundles, to propagate to CM for plugins | 
+|| villanova_DOCKER_REGISTRY_OVERRIDE |  | Deprecated-for v1 bundles, to propagate to CM for plugins | 

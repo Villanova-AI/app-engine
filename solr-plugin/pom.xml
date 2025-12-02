@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
+        <groupId>ai.villanova</groupId>
         <artifactId>app-engine</artifactId>
         <version>7.3.0</version>
     </parent>
-    <artifactId>entando-plugin-jpsolr</artifactId>
-    <groupId>org.entando.entando.plugins</groupId>
+    <artifactId>villanova-plugin-jpsolr</artifactId>
+    <groupId>ai.villanova.villanova.plugins</groupId>
     <packaging>jar</packaging>
-    <name>Entando Plugin: Solr Connector</name>
+    <name>Villanova Plugin: Solr Connector</name>
     <description>Enables the use of Solr as search engine</description>
     <developers>
         <developer>
@@ -77,18 +77,18 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jacms</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jacms</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-admin-console</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-admin-console</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-portal-ui</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-portal-ui</artifactId>
             <version>${project.version}</version>
         </dependency>
 
@@ -120,22 +120,22 @@
 
         <!--Test dependencies -->
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-admin-console</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-admin-console</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-portal-ui</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-portal-ui</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>

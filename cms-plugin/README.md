@@ -1,12 +1,12 @@
-[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatusbadge-jx.apps.serv.run%2Fentando%2Fentando-plugin-jacms)](https://github.com/entando/devops-results/tree/logs/jenkins-x/logs/entando/entando-plugin-jacms/master)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jacms&metric=alert_status)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jacms)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jacms&metric=coverage)](https://entando.github.io/devops-results/entando-plugin-jacms/master/jacoco/index.html)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jacms&metric=vulnerabilities)](https://entando.github.io/devops-results/entando-plugin-jacms/master/dependency-check-report.html)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jacms&metric=code_smells)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jacms)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jacms&metric=security_rating)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jacms)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jacms&metric=sqale_index)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jacms)
+[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatusbadge-jx.apps.serv.run%2Fvillanova%2Fvillanova-plugin-jacms)](https://github.com/villanova/devops-results/tree/logs/jenkins-x/logs/villanova/villanova-plugin-jacms/master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jacms&metric=alert_status)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jacms)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jacms&metric=coverage)](https://villanova.github.io/devops-results/villanova-plugin-jacms/master/jacoco/index.html)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jacms&metric=vulnerabilities)](https://villanova.github.io/devops-results/villanova-plugin-jacms/master/dependency-check-report.html)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jacms&metric=code_smells)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jacms)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jacms&metric=security_rating)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jacms)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jacms&metric=sqale_index)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jacms)
 
-entando-plugin-jacms
+villanova-plugin-jacms
 ============
 
 **CMS**
@@ -23,14 +23,14 @@ In order to install the CMS plugin, you must insert the following dependency in 
 
 ```
 <dependency>
-       <groupId>org.entando.entando.bundles.app-view</groupId>
-       <artifactId>entando-app-view-cms-default</artifactId>
-       <version>${entando.version}</version>
+       <groupId>org.villanova.villanova.bundles.app-view</groupId>
+       <artifactId>villanova-app-view-cms-default</artifactId>
+       <version>${villanova.version}</version>
        <type>war</type>
 </dependency>
 ```
 
-# Developing against local versions of upstream projects (e.g. admin-console,  entando-engine).
+# Developing against local versions of upstream projects (e.g. admin-console,  villanova-engine).
 
 Full instructions on how to develop against local versions of upstream projects are available in the
-[entando-parent-bom](https://github.com/entando/entando-core-bom) project. 
+[villanova-parent-bom](https://github.com/villanova/villanova-core-bom) project. 

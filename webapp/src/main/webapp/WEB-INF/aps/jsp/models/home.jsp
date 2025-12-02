@@ -4,10 +4,10 @@
 <!DOCTYPE html>
 <html lang="<wp:info key="currentLang" />">
     <head>
-        <title>Entando - Welcome</title>
+        <title>Villanova - Welcome</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <link rel="shortcut icon" href="<wp:resourceURL ignoreTenant="true" />administration/img/favicon-entando.png">
+        <link rel="shortcut icon" href="<wp:resourceURL ignoreTenant="true" />administration/img/favicon-villanova.png">
 
         <!--CSS inclusions-->
         <link rel="stylesheet" href="<wp:resourceURL />static/css/bootstrap.min.css" media="screen" />
@@ -28,11 +28,11 @@
         <div class="container e6-home-container">
             <div>
                 <div class="logo-entando-top">
-                    <img class="logo-entando-login" src="<wp:resourceURL ignoreTenant="true" />administration/img/login-logo.svg" alt="Entando 6" />
+                    <img class="logo-entando-login" src="<wp:resourceURL ignoreTenant="true" />administration/img/villanova-login-logo.svg" alt="Villanova v0.9.0" />
                 </div>
-                <div class="ux_brand-lp">The Entando <c:out value="${appBuilderVersion}" /> has been successfully installed</div>
+                <div class="ux_brand-lp">The Villanova v0.9.0 has been successfully installed</div>
                 <div class="entando-intro lgfont">
-                    This is the default page after installing Entando successfully.
+                    This is the default page after installing Villanova successfully.
                 </div>
                 <div class="entando-intro">
                     To replace this page, go to the home page and login as the administrator.
@@ -58,11 +58,10 @@
                 </c:choose>
 
                 <div id="social-link">
-                    <a href="http://www.entando.com" target="_blank" rel="noopener noreferrer"><img src="<wp:resourceURL ignoreTenant="true" />administration/img/entando_icon.png" alt="Entando" /></a>
-                    <a href="http://github.com/entando/" target="_blank" rel="noopener noreferrer"><img src="<wp:resourceURL ignoreTenant="true" />administration/img/github.png" alt="Entando on Github" /></a>
-                    <a href="https://twitter.com/entando" target="_blank" rel="noopener noreferrer"><img src="<wp:resourceURL ignoreTenant="true" />administration/img/twitter.png" alt="Entando on Twitter" /></a>
+                    <a href="http://www.villanova.ai" target="_blank" rel="noopener noreferrer"><img src="<wp:resourceURL ignoreTenant="true" />administration/img/entando_icon.png" alt="Villanova" /></a>
+                    <a href="http://github.com/Villanova-AI/" target="_blank" rel="noopener noreferrer"><img src="<wp:resourceURL ignoreTenant="true" />administration/img/github.png" alt="Villanova on Github" /></a>
                 </div>
-                <div class="copyright-entando">Copyright <%= new java.text.SimpleDateFormat("yyyy").format(new java.util.Date()) %>&nbsp;<span class="entando-sm-write">Entando</span></div>
+                <div class="copyright-entando">Copyright <%= new java.text.SimpleDateFormat("yyyy").format(new java.util.Date()) %>&nbsp;<span class="entando-sm-write">Villanova</span></div>
             </div>
         </div>
     </body>

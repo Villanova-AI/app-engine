@@ -3,14 +3,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
+        <groupId>ai.villanova</groupId>
         <artifactId>app-engine</artifactId>
         <version>7.3.0</version>
     </parent>
-    <artifactId>entando-plugin-jpredis</artifactId>
-    <groupId>org.entando.entando.plugins</groupId>
+    <artifactId>villanova-plugin-jpredis</artifactId>
+    <groupId>ai.villanova.villanova.plugins</groupId>
     <packaging>jar</packaging>
-    <name>Entando Plugin: Redis Connector</name>
+    <name>Villanova Plugin: Redis Connector</name>
     <description>Enables the use of Redis as system library</description>
     <developers>
         <developer>
@@ -19,7 +19,7 @@
             <email>eugenio.santoboni@gmail.com</email>
         </developer>
     </developers>
-    <url>http://www.entando.com/</url>
+    <url>http://www.villanova.ai/</url>
     <build>
         <resources>
             <resource>
@@ -138,8 +138,8 @@
             <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
         </dependency>
@@ -202,8 +202,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>

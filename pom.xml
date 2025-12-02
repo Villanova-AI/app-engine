@@ -3,11 +3,11 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
-        <artifactId>entando-maven-root</artifactId>
+        <groupId>ai.villanova</groupId>
+        <artifactId>villanova-maven-root</artifactId>
         <version>7.2.0</version>
     </parent>
-    <groupId>org.entando</groupId>
+    <groupId>ai.villanova</groupId>
 
     <artifactId>app-engine</artifactId>
     <version>7.3.0</version>
@@ -29,10 +29,10 @@
         <module>webapp</module>
     </modules>
 
-    <name>Entando App Engine Parent POM</name>
-    <description>Entando App Engine Parent POM</description>
+    <name>villanova App Engine Parent POM</name>
+    <description>villanova App Engine Parent POM</description>
     <inceptionYear>2019</inceptionYear>
-    <url>https://central.entando.com</url>
+    <url>https://villanova.ai/</url>
     <licenses>
         <license>
             <name>GNU LESSER GENERAL PUBLIC LICENSE, Version 3, 29 June 2007</name>
@@ -41,8 +41,8 @@
         </license>
     </licenses>
     <organization>
-        <name>Entando Inc.</name>
-        <url>https://www.entando.com/</url>
+        <name>villanova Inc.</name>
+        <url>https://villanova.ai/</url>
     </organization>
     <repositories>
         <repository>

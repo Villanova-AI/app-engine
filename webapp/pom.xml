@@ -3,15 +3,15 @@
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
+        <groupId>ai.villanova</groupId>
         <artifactId>app-engine</artifactId>
         <version>7.3.0</version>
     </parent>
-    <groupId>org.entando.entando</groupId>
+    <groupId>ai.villanova.villanova</groupId>
     <artifactId>webapp</artifactId>
     <packaging>war</packaging>
-    <name>Entando App Engine Webapp</name>
-    <url>http://www.entando.com/</url>
+    <name>Villanova App Engine Webapp</name>
+    <url>http://www.villanova.ai/</url>
     <properties>
         <!-- TESTS -->
         <test.database.driver>org.apache.derby.jdbc.EmbeddedDriver</test.database.driver>
@@ -27,18 +27,21 @@
         </test.database.serv.url>
 
         <docker.host.address>127.0.0.1</docker.host.address>
+        <villanova.engine.port>8080</villanova.engine.port>
         <entando.engine.port>8080</entando.engine.port>
         <appbuilder.port>3000</appbuilder.port>
         <skipAppBuilderImage>true</skipAppBuilderImage>
-        <docker.db.database>entando</docker.db.database>
-        <docker.db.username>entando</docker.db.username>
+        <docker.db.database>villanova</docker.db.database>
+        <docker.db.username>villanova</docker.db.username>
         <docker.db.password>password</docker.db.password>
         <env.db.environment>production</env.db.environment>
+        <villanova.engine.web.context>${project.build.finalName}</villanova.engine.web.context>
         <entando.engine.web.context>${project.build.finalName}</entando.engine.web.context>
         <skipDocker>true</skipDocker>
         <skipSmokeTests>true</skipSmokeTests>
         <autoCreateNetwork>true</autoCreateNetwork>
 
+        <villanova.version>${project.version}</villanova.version>
         <entando.version>${project.version}</entando.version>
         <postgres.driver.version>42.2.25</postgres.driver.version>
         <oracle.driver.version>21.4.0.0.1</oracle.driver.version>
@@ -75,58 +78,58 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-admin-console</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-admin-console</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-portal-ui</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-portal-ui</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jacms</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jacms</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jpmail</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jpmail</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jpversioning</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jpversioning</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jpseo</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jpseo</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jpredis</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jpredis</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jpcds</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jpcds</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-keycloak-auth</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-keycloak-auth</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jpsolr</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jpsolr</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -183,15 +186,15 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
             <classifier>tests</classifier>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jacms</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jacms</artifactId>
             <version>${project.version}</version>
             <classifier>tests</classifier>
             <scope>test</scope>
@@ -210,6 +213,7 @@
                 <!--Image configuration -->
                 <skipDocker>false</skipDocker>
                 <jee.server>jetty</jee.server>
+                <villanova.engine.address>localhost</villanova.engine.address>
                 <entando.engine.address>localhost</entando.engine.address>
                 <app.builder.depends.on></app.builder.depends.on>
 
@@ -232,12 +236,13 @@
                 <skipDocker>false</skipDocker>
 
                 <jee.server>eap</jee.server>
+                <villanova.engine.address>${docker.host.address}</villanova.engine.address>
                 <entando.engine.address>${docker.host.address}</entando.engine.address>
                 <app.builder.depends.on>${project.artifactId}-engine</app.builder.depends.on>
 
                 <skipServerImage>false</skipServerImage>
                 <jboss.home.in.image>/opt/eap</jboss.home.in.image>
-                <server.base.image>entando/entando-eap73-clustered-base:7.2.0</server.base.image>
+                <server.base.image>villanova/villanova-eap73-clustered-base:7.2.0</server.base.image>
 
                 <derby.base.folder>/entando-data/databases</derby.base.folder>
             </properties>
@@ -249,12 +254,13 @@
                 <skipDocker>false</skipDocker>
                 <jee.server>wildfly</jee.server>
 
+                <villanova.engine.address>${docker.host.address}</villanova.engine.address>
                 <entando.engine.address>${docker.host.address}</entando.engine.address>
                 <app.builder.depends.on>${project.artifactId}-engine</app.builder.depends.on>
 
                 <skipServerImage>false</skipServerImage>
                 <jboss.home.in.image>/wildfly</jboss.home.in.image>
-                <server.base.image>entando/entando-wildfly17-base:7.2.0</server.base.image>
+                <server.base.image>villanova/villanova-wildfly17-base:7.2.0</server.base.image>
 
                 <derby.base.folder>/entando-data/databases</derby.base.folder>
             </properties>
@@ -264,6 +270,7 @@
             <properties>
                 <db.vendor>derby</db.vendor>
                 <skipDatabaseImage>true</skipDatabaseImage>
+                <villanova.engine.depends.on></villanova.engine.depends.on>
                 <entando.engine.depends.on></entando.engine.depends.on>
                 <!--DB connection properties-->
                 <portdb.database>entandoPort</portdb.database>
@@ -281,7 +288,7 @@
                 <servdb.jndi>java:/jdbc/servDataSource</servdb.jndi>
 
                 <!-- DB work required from the server image. Create the template Derby databases -->
-                <server.init.command>$ENTANDO_COMMON_PATH/init-derby-from-war.sh</server.init.command>
+                <server.init.command>$entando_COMMON_PATH/init-derby-from-war.sh</server.init.command>
             </properties>
         </profile>
         <profile>
@@ -289,6 +296,7 @@
             <properties>
                 <db.vendor>postgresql</db.vendor>
                 <skipDatabaseImage>false</skipDatabaseImage>
+                <villanova.engine.depends.on>${project.artifactId}-dbms</villanova.engine.depends.on>
                 <entando.engine.depends.on>${project.artifactId}-dbms</entando.engine.depends.on>
                 <db.server.port>5432</db.server.port>
 
@@ -315,6 +323,7 @@
             <properties>
                 <db.vendor>mysql</db.vendor>
                 <skipDatabaseImage>false</skipDatabaseImage>
+                <villanova.engine.depends.on>${project.artifactId}-dbms</villanova.engine.depends.on>
                 <entando.engine.depends.on>${project.artifactId}-dbms</entando.engine.depends.on>
                 <db.volume.mount.path>/var/lib/mysql</db.volume.mount.path>
                 <db.server.port>3306</db.server.port>
@@ -369,8 +378,8 @@
             <id>contentscheduler</id>
             <dependencies>
                 <dependency>
-                    <groupId>org.entando.entando.plugins</groupId>
-                    <artifactId>entando-plugin-jpcontentscheduler</artifactId>
+                    <groupId>ai.villanova.villanova.plugins</groupId>
+                    <artifactId>villanova-plugin-jpcontentscheduler</artifactId>
                     <version>${project.version}</version>
                 </dependency>
             </dependencies>
@@ -481,7 +490,7 @@
         </profile>
     </profiles>
     <build>
-        <finalName>entando-de-app</finalName>
+        <finalName>villanova-de-app</finalName>
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -728,15 +737,15 @@
                                     </CORS_ACCESS_CONTROL_MAX_AGE>
                                 </env>
                                 <dependsOn>
-                                    <container>${entando.engine.depends.on}</container>
+                                    <container>${villanova.engine.depends.on}</container>
                                 </dependsOn>
                                 <ports>
-                                    <port>+docker.host.address:entando.engine.port:8080</port>
+                                    <port>+docker.host.address:villanova.engine.port:8080</port>
                                 </ports>
                                 <wait>
                                     <http>
                                         <url>
-                                            http://${docker.host.address}:${entando.engine.port}/${project.artifactId}
+                                            http://${docker.host.address}:${villanova.engine.port}/${project.artifactId}
                                         </url>
                                     </http>
                                     <time>120000</time>
@@ -749,7 +758,7 @@
                             </run>
                         </image>
                         <image>
-                            <name>entando/appbuilder-with-digital-exchange:5.2.0</name>
+                            <name>villanova/appbuilder-with-digital-exchange:5.2.0</name>
                             <run>
                                 <skip>${skipAppBuilderImage}</skip>
                                 <network>
@@ -765,7 +774,7 @@
                                 </dependsOn>
                                 <env>
                                     <DOMAIN>
-                                        http://${entando.engine.address}:${entando.engine.port}/${project.artifactId}
+                                        http://${villanova.engine.address}:${villanova.engine.port}/${project.artifactId}
                                     </DOMAIN>
                                 </env>
                                 <wait>
@@ -782,7 +791,7 @@
                             </run>
                         </image>
                         <image>
-                            <name>entando/entando-smoke-tests:${entando.version}</name>
+                            <name>villanova/villanova-smoke-tests:${villanova.version}</name>
                             <run>
                                 <skip>${skipSmokeTests}</skip>
                                 <network>
@@ -793,11 +802,11 @@
                                 <dependsOn>
                                     <container>${app.builder.depends.on}</container>
                                 </dependsOn>
-                                <cmd>mvn verify -Dtest=org.entando.selenium.smoketests.STAddTestUserTest</cmd>
+                                <cmd>mvn verify -Dtest=ai.villanova.selenium.smoketests.STAddTestUserTest</cmd>
                                 <env>
-                                    <ENTANDO_APPBUILDER_URL>
+                                    <VILLANOVA_APPBUILDER_URL>
                                         http://appbuilder:5000
-                                    </ENTANDO_APPBUILDER_URL>
+                                    </VILLANOVA_APPBUILDER_URL>
                                 </env>
                                 <log>
                                     <enabled>true</enabled>
@@ -990,7 +999,8 @@
                     <systemProperties>
                         <logback.configurationFile>logback-default.xml</logback.configurationFile>
                         <org.eclipse.jetty.LEVEL>FATAL</org.eclipse.jetty.LEVEL>
-                        <entando.version>${entando.version}</entando.version>
+                        <villanova.version>${villanova.version}</villanova.version>
+                        <entando.version>${villanova.version}</entando.version>
                         <db.migration.strategy>auto</db.migration.strategy>
                         <db.restore.enabled>true</db.restore.enabled>
                         <db.environment>production</db.environment>
@@ -1103,7 +1113,7 @@
                     <password>${mediator.object.password}</password>
                     <unpack>false</unpack>
                     <skipCache>true</skipCache>
-                    <outputDirectory>${project.build.directory}/entando-de-app/resources/static/js</outputDirectory>
+                    <outputDirectory>${project.build.directory}/villanova-de-app/resources/static/js</outputDirectory>
                     <outputFileName>entando-mfecommunication.umd.cjs</outputFileName>
                 </configuration>
             </plugin>

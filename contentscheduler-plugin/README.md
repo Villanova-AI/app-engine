@@ -1,12 +1,12 @@
-[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatusbadge-jx.apps.serv.run%2Fentando%2Fentando-plugin-jpcontentscheduler)](https://github.com/entando/devops-results/tree/logs/jenkins-x/logs/entando/entando-plugin-jpcontentscheduler/master)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpcontentscheduler&metric=alert_status)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpcontentscheduler)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpcontentscheduler&metric=coverage)](https://entando.github.io/devops-results/entando-plugin-jpcontentscheduler/master/jacoco/index.html)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpcontentscheduler&metric=vulnerabilities)](https://entando.github.io/devops-results/entando-plugin-jpcontentscheduler/master/dependency-check-report.html)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpcontentscheduler&metric=code_smells)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpcontentscheduler)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpcontentscheduler&metric=security_rating)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpcontentscheduler)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpcontentscheduler&metric=sqale_index)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpcontentscheduler)
+[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatusbadge-jx.apps.serv.run%2Fvillanova%2Fvillanova-plugin-jpcontentscheduler)](https://github.com/villanova/devops-results/tree/logs/jenkins-x/logs/villanova/villanova-plugin-jpcontentscheduler/master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpcontentscheduler&metric=alert_status)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpcontentscheduler)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpcontentscheduler&metric=coverage)](https://villanova.github.io/devops-results/villanova-plugin-jpcontentscheduler/master/jacoco/index.html)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpcontentscheduler&metric=vulnerabilities)](https://villanova.github.io/devops-results/villanova-plugin-jpcontentscheduler/master/dependency-check-report.html)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpcontentscheduler&metric=code_smells)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpcontentscheduler)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpcontentscheduler&metric=security_rating)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpcontentscheduler)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpcontentscheduler&metric=sqale_index)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpcontentscheduler)
 
-entando-plugin-jpcontentscheduler
+villanova-plugin-jpcontentscheduler
 ============
 
 ## Content scheduler
@@ -32,9 +32,9 @@ Add the following snippet inside the dependencies:
 
 ```  
 <dependency>
-    <groupId>org.entando.entando.plugins</groupId>
-    <artifactId>entando-plugin-jpcontentscheduler</artifactId>
-    <version>${entando.version}</version>
+    <groupId>org.villanova.villanova.plugins</groupId>
+    <artifactId>villanova-plugin-jpcontentscheduler</artifactId>
+    <version>${villanova.version}</version>
     <type>war</type>
 </dependency>
 ``` 
@@ -84,7 +84,7 @@ It is possible to specify in a very granular way which user should receive email
  mandatory boolean to define the behaviour of an expired content: `true` unpublishes the content while `false` archives it. 
  
  
-# Developing against local versions of upstream projects (e.g. admin-console,  entando-engine).
+# Developing against local versions of upstream projects (e.g. admin-console,  villanova-engine).
 
 Full instructions on how to develop against local versions of upstream projects are available in the
-[entando-parent-bom](https://github.com/entando/entando-core-bom) project. 
+[villanova-parent-bom](https://github.com/villanova/villanova-core-bom) project. 

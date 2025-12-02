@@ -3,16 +3,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
+        <groupId>ai.villanova</groupId>
         <artifactId>app-engine</artifactId>
         <version>7.3.0</version>
     </parent>
-    <artifactId>entando-plugin-jpcds</artifactId>
-    <groupId>org.entando.entando.plugins</groupId>
+    <artifactId>villanova-plugin-jpcds</artifactId>
+    <groupId>ai.villanova.villanova.plugins</groupId>
     <packaging>jar</packaging>
-    <name>Entando Plugin: Content Delivery Server Connector</name>
+    <name>Villanova Plugin: Content Delivery Server Connector</name>
     <description>Enables the use of Content Delivery Server</description>
-    <url>http://www.entando.com/</url>
+    <url>http://www.villanova.ai/</url>
     <build>
         <resources>
             <resource>
@@ -62,16 +62,16 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <environmentVariables>
-                        <ENTANDO_TENANTS>
+                        <VILLANOVA_TENANTS>
 <![CDATA[
 [{
     "tenantCode": "tenant",
     "kcEnabled": true,
     "kcAuthUrl": "http://10-219-168-112.nip.io/auth",
-    "kcRealm": "entando",
+    "kcRealm": "villanova",
     "kcClientId": "quickstart",
     "kcClientSecret": "2837772a-f583-4dd5-8d89-9147a89dc60e",
-    "kcPublicClientId": "entando-web",
+    "kcPublicClientId": "villanova-web",
     "kcSecureUris": "",
     "kcDefaultAuthorizations": "",
     "dbDriverClassName": "org.postgresql.Driver",
@@ -83,10 +83,10 @@
     "cdsPath": "api/v1"
 }]
 ]]>
-                        </ENTANDO_TENANTS>
+                        </VILLANOVA_TENANTS>
                         <CDS_ENABLED>true</CDS_ENABLED>
                         <CDS_PATH>/api/v1</CDS_PATH>
-                        <KEYCLOAK_REALM>entando</KEYCLOAK_REALM>
+                        <KEYCLOAK_REALM>villanova</KEYCLOAK_REALM>
                         <KEYCLOAK_CLIENT_ID>quickstart</KEYCLOAK_CLIENT_ID>
                     </environmentVariables>
                     <trimStackTrace>false</trimStackTrace>
@@ -100,8 +100,8 @@
             <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
             <type>jar</type>
         </dependency>        
@@ -142,36 +142,36 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-admin-console</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-admin-console</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-portal-ui</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-portal-ui</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jacms</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jacms</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jacms</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jacms</artifactId>
             <type>jar</type>
             <version>${project.version}</version>
             <classifier>classes</classifier>

@@ -2,14 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
+        <groupId>ai.villanova</groupId>
         <artifactId>app-engine</artifactId>
         <version>7.3.0</version>
     </parent>
-    <artifactId>entando-plugin-jpversioning</artifactId>
-    <groupId>org.entando.entando.plugins</groupId>
+    <artifactId>villanova-plugin-jpversioning</artifactId>
+    <groupId>ai.villanova.villanova.plugins</groupId>
     <packaging>jar</packaging>
-    <name>Entando Plugin: Content Versioning</name>
+    <name>Villanova Plugin: Content Versioning</name>
     <description>Manages the versioning of portal content, storing the history of performed operations</description>
     <developers>
         <developer>
@@ -18,7 +18,7 @@
             <email>eugenio.santoboni@gmail.com</email>
         </developer>
     </developers>
-    <url>http://www.entando.com/</url>
+    <url>http://www.villanova.ai/</url>
     <build>
         <resources>
             <resource>
@@ -76,8 +76,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jacms</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jacms</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -91,22 +91,22 @@
 
         <!--Test dependencies-->
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-admin-console</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-admin-console</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando.plugins</groupId>
-            <artifactId>entando-plugin-jacms</artifactId>
+            <groupId>ai.villanova.villanova.plugins</groupId>
+            <artifactId>villanova-plugin-jacms</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>
@@ -173,8 +173,8 @@
             <artifactId>spring-web</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
