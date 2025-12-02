@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.entando</groupId>
+        <groupId>ai.villanova</groupId>
         <artifactId>app-engine</artifactId>
         <version>7.3.0</version>
     </parent>
-    <groupId>org.entando.entando</groupId>
-    <artifactId>entando-engine</artifactId>
+    <groupId>ai.villanova.villanova</groupId>
+    <artifactId>villanova-engine</artifactId>
     <packaging>jar</packaging>
-    <name>Entando Core: Engine</name>
-    <description>Entando Engine: an agile, modern and user-centric open source Portal platform.</description>
-    <url>http://www.entando.com/</url>
+    <name>Villanova Core: Engine</name>
+    <description>Villanova Engine: an agile, modern and user-centric open source Portal platform.</description>
+    <url>http://www.villanova.ai/</url>
     <build>
         <finalName>${project.artifactId}-${project.version}</finalName>
         <extensions>

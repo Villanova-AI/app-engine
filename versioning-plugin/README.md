@@ -1,12 +1,12 @@
-[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatusbadge-jx.apps.serv.run%2Fentando%2Fentando-plugin-jpversioning)](https://github.com/entando/devops-results/tree/logs/jenkins-x/logs/entando/entando-plugin-jpversioning/master)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpversioning&metric=alert_status)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpversioning)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpversioning&metric=coverage)](https://entando.github.io/devops-results/entando-plugin-jpversioning/master/jacoco/index.html)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpversioning&metric=vulnerabilities)](https://entando.github.io/devops-results/entando-plugin-jpversioning/master/dependency-check-report.html)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpversioning&metric=code_smells)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpversioning)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpversioning&metric=security_rating)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpversioning)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpversioning&metric=sqale_index)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpversioning)
+[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatusbadge-jx.apps.serv.run%2Fvillanova%2Fvillanova-plugin-jpversioning)](https://github.com/villanova/devops-results/tree/logs/jenkins-x/logs/villanova/villanova-plugin-jpversioning/master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpversioning&metric=alert_status)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpversioning)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpversioning&metric=coverage)](https://villanova.github.io/devops-results/villanova-plugin-jpversioning/master/jacoco/index.html)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpversioning&metric=vulnerabilities)](https://villanova.github.io/devops-results/villanova-plugin-jpversioning/master/dependency-check-report.html)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpversioning&metric=code_smells)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpversioning)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpversioning&metric=security_rating)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpversioning)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpversioning&metric=sqale_index)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpversioning)
 
-entando-plugin-jpversioning
+villanova-plugin-jpversioning
 ============
 **Versioning**
 
@@ -24,9 +24,9 @@ Though the plugin installation is not difficult at all, we are going to modify t
 In order to install the Versioning Plugin, you must insert the following dependency in the pom.xml file of your project:
 ```
 <dependency>
-    <groupId>org.entando.entando.plugins</groupId>
-    <artifactId>entando-plugin-jpversioning</artifactId>
-    <version>${entando.version}</version>
+    <groupId>org.villanova.villanova.plugins</groupId>
+    <artifactId>villanova-plugin-jpversioning</artifactId>
+    <version>${villanova.version}</version>
     <type>war</type>
 </dependency>
 ```
@@ -57,7 +57,7 @@ The _recycle bin_ can be access from the left menu _Plugins_ â†’ _Versioning_ â†
 You can restore and delete permanently the resources using the arrow and the remove icons.
 
 
-# Developing against local versions of upstream projects (e.g. admin-console,  entando-engine).
+# Developing against local versions of upstream projects (e.g. admin-console,  villanova-engine).
 
 Full instructions on how to develop against local versions of upstream projects are available in the
-[entando-parent-bom](https://github.com/entando/entando-core-bom) project. 
+[villanova-parent-bom](https://github.com/villanova/villanova-core-bom) project. 

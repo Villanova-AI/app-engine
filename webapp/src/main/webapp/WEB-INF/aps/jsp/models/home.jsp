@@ -7,7 +7,7 @@
         <title>Entando - Welcome</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charset="utf-8" />
-        <link rel="shortcut icon" href="<wp:resourceURL ignoreTenant="true" />administration/img/favicon-entando.png">
+        <link rel="shortcut icon" href="<wp:resourceURL ignoreTenant="true" />administration/img/favicon-villanova.png">
 
         <!--CSS inclusions-->
         <link rel="stylesheet" href="<wp:resourceURL />static/css/bootstrap.min.css" media="screen" />
@@ -28,11 +28,11 @@
         <div class="container e6-home-container">
             <div>
                 <div class="logo-entando-top">
-                    <img class="logo-entando-login" src="<wp:resourceURL ignoreTenant="true" />administration/img/login-logo.svg" alt="Entando 6" />
+                    <img class="logo-entando-login" src="<wp:resourceURL ignoreTenant="true" />administration/img/villanova-login-logo.svg" alt="Entando 6" />
                 </div>
-                <div class="ux_brand-lp">The Entando <c:out value="${appBuilderVersion}" /> has been successfully installed</div>
+                <div class="ux_brand-lp">The Villanova v0.9.0 has been successfully installed</div>
                 <div class="entando-intro lgfont">
-                    This is the default page after installing Entando successfully.
+                    This is the default page after installing Villanova successfully.
                 </div>
                 <div class="entando-intro">
                     To replace this page, go to the home page and login as the administrator.

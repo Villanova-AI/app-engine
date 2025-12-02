@@ -1,6 +1,6 @@
 # app-engine
-[![Build Status](https://jenkins.entandocloud.com/buildStatus/icon?job=de-entando-de-app-master)](https://jenkins.entandocloud.com/job/de-entando-de-app-master/)
-Application to act as the starting point for an Entando application integrated with a Digital Exchange instance
+[![Build Status](https://jenkins.villanovacloud.com/buildStatus/icon?job=de-villanova-de-app-master)](https://jenkins.villanovacloud.com/job/de-villanova-de-app-master/)
+Application to act as the starting point for an Villanova application integrated with a Digital Exchange instance
 
 ## Develop using the jetty-maven-plugin
 If you need to develop fast against this project, you can run the application using the jetty-maven-plugin.
@@ -56,19 +56,19 @@ mvn clean package
 docker build . -f Dockerfile.wildfly -t <YOUR-USER>/<YOUR-REPO-NAME>:<YOUR-VERSION>
 ```
 
-## Upgrading database from Entando 6.3.2 to 7.0.0
+## Upgrading database from Villanova 6.3.2 to 7.0.0
 
-Use the scripts inside the `upgrade` folder to upgrade your Entando database from version 6.3.2 to version 7.0.0. There are different scripts for PostgreSQL, MySQL and Derby.
+Use the scripts inside the `upgrade` folder to upgrade your Villanova database from version 6.3.2 to version 7.0.0. There are different scripts for PostgreSQL, MySQL and Derby.
 
-Starting from version 7.0.0 Entando uses Liquibase, a tool that handle database changes, so you will not need to run any manual queries to upgrade your database from versions higher than 7.0.0.
+Starting from version 7.0.0 Villanova uses Liquibase, a tool that handle database changes, so you will not need to run any manual queries to upgrade your database from versions higher than 7.0.0.
 
 # Deploying to Kubernetes
 Clone the repository
 Change the project name to your preferred project name. From your favourite IDE
- - files update should be pom.xml, entando-app.yaml
-Deploy your Entando Kubernetes operator to K8S
+ - files update should be pom.xml, villanova-app.yaml
+Deploy your Villanova Kubernetes operator to K8S
 Setup Keycloak
     - Point to an existing Keycloak instance
     - Install lightweight instance
-Deploy Entando App itself
+Deploy Villanova App itself
 Point to ...       

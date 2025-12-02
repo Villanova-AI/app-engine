@@ -4,14 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>app-engine</artifactId>
-        <groupId>org.entando</groupId>
+        <groupId>ai.villanova</groupId>
         <version>7.3.0</version>
     </parent>
-    <groupId>org.entando.entando</groupId>
-    <artifactId>entando-keycloak-auth</artifactId>
+    <groupId>ai.villanova.villanova</groupId>
+    <artifactId>villanova-keycloak-auth</artifactId>
     <packaging>jar</packaging>
-    <name>Entando Plugin: Keycloak</name>
-    <url>http://www.entando.com/</url>
+    <name>Villanova Plugin: Keycloak</name>
+    <url>http://www.villanova.ai/</url>
     <build>
         <plugins>
             <plugin>
@@ -32,13 +32,13 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-portal-ui</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-portal-ui</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
@@ -140,8 +140,8 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.entando.entando</groupId>
-            <artifactId>entando-engine</artifactId>
+            <groupId>ai.villanova.villanova</groupId>
+            <artifactId>villanova-engine</artifactId>
             <version>${project.version}</version>
             <type>test-jar</type>
             <scope>test</scope>

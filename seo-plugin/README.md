@@ -1,12 +1,12 @@
-[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatusbadge-jx.apps.serv.run%2Fentando%2Fentando-plugin-jpseo)](https://github.com/entando/devops-results/tree/logs/jenkins-x/logs/entando/entando-plugin-jpseo/master)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpseo&metric=alert_status)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpseo)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpseo&metric=coverage)](https://entando.github.io/devops-results/entando-plugin-jpseo/master/jacoco/index.html)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpseo&metric=vulnerabilities)](https://entando.github.io/devops-results/entando-plugin-jpseo/master/dependency-check-report.html)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpseo&metric=code_smells)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpseo)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpseo&metric=security_rating)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpseo)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=entando_entando-plugin-jpseo&metric=sqale_index)](https://sonarcloud.io/dashboard?id=entando_entando-plugin-jpseo)
+[![Build Status](https://img.shields.io/endpoint?url=https%3A%2F%2Fstatusbadge-jx.apps.serv.run%2Fvillanova%2Fvillanova-plugin-jpseo)](https://github.com/villanova/devops-results/tree/logs/jenkins-x/logs/villanova/villanova-plugin-jpseo/master)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpseo&metric=alert_status)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpseo)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpseo&metric=coverage)](https://villanova.github.io/devops-results/villanova-plugin-jpseo/master/jacoco/index.html)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpseo&metric=vulnerabilities)](https://villanova.github.io/devops-results/villanova-plugin-jpseo/master/dependency-check-report.html)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpseo&metric=code_smells)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpseo)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpseo&metric=security_rating)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpseo)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=villanova_villanova-plugin-jpseo&metric=sqale_index)](https://sonarcloud.io/dashboard?id=villanova_villanova-plugin-jpseo)
 
-entando-plugin-jpseo
+villanova-plugin-jpseo
 # SEO
 
 **Code**: ```jpseo```
@@ -21,9 +21,9 @@ In order to install the SEO plugin, you must insert the following dependency in 
 
 ```  
 <dependency>
-	<groupId>org.entando.entando.plugins</groupId>
-    <artifactId>entando-plugin-jpseo</artifactId>
-    <version>${entando.version}</version>
+	<groupId>org.villanova.villanova.plugins</groupId>
+    <artifactId>villanova-plugin-jpseo</artifactId>
+    <version>${villanova.version}</version>
     <type>war</type>
 </dependency>
 ```
@@ -94,7 +94,7 @@ for
 <jpseo:content publishExtraTitle="true" publishExtraDescription="true" />
 ```
 
-# Developing against local versions of upstream projects (e.g. admin-console,  entando-engine).
+# Developing against local versions of upstream projects (e.g. admin-console,  villanova-engine).
 
 Full instructions on how to develop against local versions of upstream projects are available in the
-[entando-parent-bom](https://github.com/entando/entando-core-bom) project. 
+[villanova-parent-bom](https://github.com/villanova/villanova-core-bom) project. 
